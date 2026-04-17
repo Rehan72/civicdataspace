@@ -204,7 +204,7 @@ export default function Page() {
                     onChange={({ sort, order }) => store.setSort(sort, order)}
                   />
                   {/* Share Link Button */}
-                  <button
+                  {/* <button
                     onClick={copyShareLink}
                     className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-primary/20"
                     title="Copy shareable link with current filters"
@@ -220,7 +220,7 @@ export default function Page() {
                         <span>Share</span>
                       </>
                     )}
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -231,8 +231,8 @@ export default function Page() {
                   <p className="text-lg font-semibold text-slate-800">{total.toLocaleString()} datasets</p>
                   <p className="text-xs text-slate-500">Showing search results and filtered datasets.</p>
                 </div>
-                <button 
-                  className="inline-flex items-center rounded bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary/40 lg:hidden" 
+                <button
+                  className="inline-flex items-center rounded bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary/40 lg:hidden"
                   onClick={() => setSidebarOpen(true)}
                   aria-controls="filter-panel"
                 >
